@@ -21,7 +21,7 @@ class FormularioCadastro extends Component {
           type="text"
           placeholder="Título"
           className="form-cadastro_input"
-          onChange={this.handleMudancaTitulo}
+          onChange={this.handleMudancaTitulo.bind(this)}
         />
         <textarea
           rows={15}

@@ -1,14 +1,17 @@
-import React from 'react';
-import FormularioCadastro from './components/formularioCadastro.jsx';
-import { ListaDeNotas } from './components/listaDeNotas.jsx';
-
-function App() {
-  return (
-    <div>
-      <FormularioCadastro />
-      <ListaDeNotas />
-    </div>
-  );
+import React, { Component } from "react";
+import ListaDeNotas from "./components/ListaDeNotas";
+import FormularioCadastro from "./components/FormularioCadastro";
+import "./assets/App.css";
+import './assets/index.css';
+class App extends Component {
+  render() {
+    return (
+      <section className="conteudo">
+        <FormularioCadastro />
+        <ListaDeNotas />
+      </section>
+    );
+  }
 }
 
 export default App;

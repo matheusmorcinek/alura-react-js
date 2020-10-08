@@ -1,14 +1,11 @@
 import React from 'react';
+import FormularioCadastro from './components/formularioCadastro.jsx';
 import { ListaDeNotas } from './components/listaDeNotas.jsx';
 
 function App() {
   return (
     <div>
-      <form>
-        <input type='text' placeholder='Título'></input>
-        <textarea placeholder='Escreva sua nota...'></textarea>
-        <button>Criar Nota</button>
-      </form>
+      <FormularioCadastro />
       <ListaDeNotas />
     </div>
   );

@@ -1,26 +1,22 @@
 import React from 'react';
 import { Component } from 'react';
+import CardNota from './cardNota';
 
 export class ListaDeNotas extends Component {
 
     render() {
-        return (<ul>
-            <li>
-                <section>
-                    <header>
-                        <h3>Título</h3>
-                        <p>dsdsssdsdss</p>
-                    </header>
-                </section>
-            </li>
-            <li>
-                <section>
-                    <header>
-                        <h3>Título</h3>
-                        <p>dsdsssdsdss</p>
-                    </header>
-                </section>
-            </li>
-        </ul>);
+        return (
+            <ul>
+                {
+                    Array.of('Trabalho', 'Trabalho', 'Estudos').map(categoria => {
+                        return (
+                            <li>
+                                <div>{categoria}</div>
+                                <CardNota />
+                            </li>
+                        )
+                    })
+                }
+            </ul>);
     }
 }
